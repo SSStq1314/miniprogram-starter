@@ -1,0 +1,19 @@
+ls:
+  miniprogram/**:
+    .js: snake_case | camelCase
+
+  miniprogram/components/**:
+    .folder: kebab-case
+
+  miniprogram/pages/**:
+    .folder: camelCase
+
+  miniprogram/salePackages/**:
+    .folder: camelCase
+
+ignore:
+  - .git
+  - node_modules
+  - miniprogram/miniprogram_npm
+  - miniprogram/app.miniapp.json
+  - miniprogram/script.env.js

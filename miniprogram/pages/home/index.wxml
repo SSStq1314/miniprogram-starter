@@ -1,0 +1,6 @@
+<!--pages/home/index.wxml-->
+<page-meta root-font-size="system" />
+<view class="container">
+
+  <tabbar />
+</view>

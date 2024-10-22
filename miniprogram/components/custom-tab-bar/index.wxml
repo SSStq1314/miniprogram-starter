@@ -1,0 +1,18 @@
+<!--custom-tab-bar/index.wxml-->
+<view class="tab-bar-view">
+  <view
+    class="item {{$tabbarStore.selected == index?'active':''}}"
+    wx:key="index"
+    wx:for="{{$tabbarStore.tabbarList}}"
+    catch:tap="switchTab"
+    data-index="{{index}}"
+  >
+    <i class="iconfont {{item.icon}} icon"></i>
+    <view class="text">{{item.text}}</view>
+  </view>
+
+  <view
+    class="round transition-all"
+    style="left:{{ (((750/$tabbarStore.tabbarList.length - 88) / 2) + ($tabbarStore.selected*750/$tabbarStore.tabbarList.length))}}rpx"
+  ></view>
+</view>

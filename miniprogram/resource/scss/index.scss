@@ -1,0 +1,182 @@
+@function crpx($rpx) {
+  @return calc(#{$rpx} + 0.5 * (1rem - 16px));
+}
+page {
+  --td-loading-color: #345ceb;
+  --td-navbar-title-font-size: crpx(34rpx);
+  --td-navbar-title-font-weight: 400;
+  --td-navbar-color: #ffffff;
+  --td-brand-color: #345ceb;
+  --td-brand-color-active: #3a64ff;
+  --td-button-large-font-size: crpx(36rpx);
+  --td-cell-right-icon-font-size: crpx(32rpx);
+  --td-font-gray-1: #222222;
+  --td-font-gray-3: #666666;
+  --td-text-color-placeholder: #666666;
+  --td-bg-color-component: #dedede;
+  --td-cell-left-icon-color: --td-font-gray-1;
+  --td-cell-left-icon-font-size: crpx(36rpx);
+  --td-cell-note-font-size: crpx(28rpx);
+  --td-cell-vertical-padding: crpx(24rpx);
+  --td-cell-horizontal-padding: crpx(24rpx);
+  --td-cell-line-height: crpx(48rpx);
+  --td-cell-title-font-size: crpx(30rpx);
+  --td-radio-icon-size: crpx(32rpx);
+  --td-radio-label-line-height: crpx(32rpx);
+  --td-picker-title-font-size: crpx(32rpx);
+  --td-tab-item-color: #333333;
+  --td-action-sheet-description-color: #33333;
+  --td-input-placeholder-text-color: #666666;
+  --td-skeleton-bg-color: #666666;
+  --td-button-font-weight: 400;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+
+  --td-font-size: crpx(20rpx);
+  --td-font-size-xs: crpx(22rpx);
+  --td-font-size-s: crpx(24rpx);
+  --td-font-size-base: crpx(28rpx);
+  --td-font-size-m: crpx(32rpx);
+  --td-font-size-l: crpx(36rpx);
+  --td-font-size-xl: crpx(40rpx);
+  --tabbar-icon-size: crpx(46rpx);
+  --td-loading-text-font-size: crpx(24rpx);
+}
+
+.transition-all {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.cutoff {
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.cutoff-two {
+  display: -webkit-inline-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.shadow {
+  box-shadow: 4rpx 16rpx 24rpx 0rpx #f1f1f1;
+}
+
+button {
+  background-color: unset;
+}
+button::before {
+  border: 0;
+  border: none;
+}
+button::after {
+  border: 0;
+  border: none;
+}
+
+page,
+view,
+text,
+image,
+button,
+video,
+map,
+scroll-view,
+swiper,
+input,
+textarea,
+navigator {
+  position: relative;
+  box-sizing: border-box;
+  background-origin: border-box;
+  isolation: isolate;
+  font-weight: 400;
+}
+
+/*
+
+动画样式
+
+ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.4s both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+.fade-up {
+  animation-duration: 0.5s;
+  animation: fadeUp 0.4s both;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+.fade-down {
+  animation-duration: 0.5s;
+  animation: fadeDown 0.4s both;
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+.fade-right {
+  animation: fadeRight 0.4s both;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+.fade-left {
+  animation: fadeLeft 0.4s both;
+}

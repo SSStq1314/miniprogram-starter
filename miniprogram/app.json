@@ -1,0 +1,27 @@
+{
+  "pages": ["pages/home/index"],
+  "subpackages": [],
+  "plugins": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f3f3f3",
+    "handleWebviewPreload": "auto",
+    "pageOrientation": "portrait",
+    "initialRenderingCache": "static"
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置将用于小程序接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": ["getLocation", "chooseLocation"],
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 20000
+  },
+  "sitemapLocation": "sitemap.json"
+}

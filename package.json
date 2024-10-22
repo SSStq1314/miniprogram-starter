@@ -1,0 +1,55 @@
+{
+  "name": "miniprogram-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/miniprogram/app.js",
+  "scripts": {
+    "prepare": "husky",
+    "lint-staged": "lint-staged",
+    "lslint": "ls-lint",
+    "eslint": "eslint --fix . --ext .js,.wxs",
+    "prettier": "prettier --config .prettierrc.yml --write './**/*.{js,sjs,wxs,css,wxss,wxml,less,scss,json}'",
+    "env:dev": "node miniprogram/script.env.js --dev",
+    "env:tsl": "node miniprogram/script.env.js --tsl",
+    "env:prod": "node miniprogram/script.env.js --prod",
+    "switch:dev": "npm-run-all -s env:dev eslint prettier",
+    "switch:tsl": "npm-run-all -s env:tsl eslint prettier",
+    "switch:prod": "npm-run-all -s env:prod eslint prettier",
+    "preversion": "standard-version --release-as patch --dry-run",
+    "version": "standard-version --release-as patch",
+    "commit": "git add . && git-cz"
+  },
+  "author": "Tench",
+  "license": "",
+  "dependencies": {
+    "mini-stores": "^2.0.0",
+    "tdesign-miniprogram": "^1.5.0",
+    "timer-miniprogram": "^0.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@ls-lint/ls-lint": "^2.2.3",
+    "babel-eslint": "10.0.3",
+    "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
+    "commitlint-config-gitmoji": "^2.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-alloy": "3.7.1",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.2.0",
+    "prettier-eslint-cli": "5.0.0",
+    "standard-version": "^9.5.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}

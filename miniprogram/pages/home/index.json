@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "initialRenderingCache": "static",
+  "disableScroll": false,
+  "usingComponents": {
+    "tabbar": "/components/custom-tab-bar/index"
+  }
+}

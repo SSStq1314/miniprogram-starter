@@ -1,0 +1,10 @@
+@import '../miniprogram/resource/scss/index.scss';
+
+.container {
+  overflow: hidden;
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  animation: fadeIn 0.3s both;
+}

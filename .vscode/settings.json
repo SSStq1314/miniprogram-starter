@@ -1,0 +1,42 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.options": {
+    "extensions": [".js", ".ts", ".tsx"]
+  },
+  "eslint.validate": ["javascript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "git.ignoreLimitWarning": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.enable": true,
+  "prettier.configPath": ".prettierrc.yml",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "wxmlConfig.onSaveFormat": true,
+  "wxmlConfig.format": {
+    "brace_style": "collapse",
+    "indent_inner_html": true,
+    "indent_scripts": "keep",
+    "indent_size": 2,
+    "indent_char": " ",
+    "unformatted": "['wxs']",
+    "disable_automatic_closing_labels": false,
+    "preserve_newlines": true,
+    "wrap_attributes": "force-expand-multiline",
+    "wrap_attributes_count": 4,
+    "wrap_attributes_indent_size": 2
+  },
+  "editor.tabSize": 2,
+  "editor.suggest.showWords": false
+}

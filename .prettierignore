@@ -1,0 +1,23 @@
+# .prettierignore
+
+*.min.js
+/node_modules
+/miniprogram/miniprogram_npm
+/dist
+project.config.json
+script.env.js
+# OS
+.DS_Store
+.idea
+.editorconfig
+.npmrc
+package.json
+package-lock.json
+
+# Ignored suffix
+*.log
+*.md
+*.svg
+*.png
+*ignore
+.husky

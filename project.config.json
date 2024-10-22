@@ -1,0 +1,85 @@
+{
+    "description": "项目配置文件",
+    "miniprogramRoot": "miniprogram/",
+    "srcMiniprogramRoot": "miniprogram/",
+    "setting": {
+        "bundle": false,
+        "ignoreUploadUnusedFiles": true,
+        "ignoreDevUnusedFiles": true,
+        "userConfirmedBundleSwitch": false,
+        "urlCheck": true,
+        "scopeDataCheck": false,
+        "coverView": true,
+        "es6": true,
+        "postcss": true,
+        "compileHotReLoad": false,
+        "lazyloadPlaceholderEnable": false,
+        "preloadBackgroundData": false,
+        "autoAudits": false,
+        "minified": true,
+        "newFeature": false,
+        "uglifyFileName": true,
+        "uploadWithSourceMap": true,
+        "useIsolateContext": true,
+        "nodeModules": false,
+        "enhance": true,
+        "useMultiFrameRuntime": true,
+        "showShadowRootInWxmlPanel": true,
+        "enableEngineNative": false,
+        "packNpmManually": true,
+        "packNpmRelationList": [
+            {
+                "packageJsonPath": "./package.json",
+                "miniprogramNpmDistDir": "./miniprogram/"
+            }
+        ],
+        "minifyWXSS": true,
+        "showES6CompileOption": false,
+        "minifyWXML": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "compileWorklet": false,
+        "useCompilerPlugins": [
+            "sass"
+        ],
+        "condition": true
+    },
+    "skeletonConfig:": {
+        "global": {
+            "loading": "shine",
+            "text": "#fff"
+        }
+    },
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {},
+    "compileType": "miniprogram",
+    "editorSetting": {
+        "tabIndent": "auto",
+        "tabSize": 4
+    },
+    "packOptions": {
+        "ignore": [
+            {
+                "value": "\\.md$",
+                "type": "regexp"
+            },
+            {
+                "value": "node_modules",
+                "type": "folder"
+            }
+        ],
+        "include": []
+    },
+    "appid": "wxbad6f08a7eb5190b",
+    "scripts": {
+        "beforePreview": "source $HOME/.zshrc;npm run switch:tsl",
+        "beforeUpload": "source $HOME/.zshrc;npm run switch:tsl",
+        "beforeCompile": "source $HOME/.zshrc;npm run switch:tsl"
+    },
+    "projectname": "bttn-salesman-wxapplet",
+    "libVersion": "3.0.2",
+    "condition": {}
+}

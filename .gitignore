@@ -1,0 +1,32 @@
+
+unpackage
+package-lock
+package-lock.json
+project.private.config.json
+yarn-error.log
+miniprogram/miniprogram_npm/
+miniprogram/components/**/*.lock
+miniprogram/components/**/package-lock.json
+yarn.lock
+.eslintcache
+
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# Node.js
+node_modules/
+$node_modules/
+.history/
+**/dist
+
+
+
